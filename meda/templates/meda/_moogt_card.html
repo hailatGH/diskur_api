@@ -1,0 +1,59 @@
+{% load humanize %}
+{% load avatar_tags %}
+{% load users_tags %}
+
+<article class="mgt-card">
+    <div class="mgt-card-container">
+        <div class="sc-author-time">
+            <p style="text-align:left;">
+                {{ moogt.get_created_at|naturaltime }}
+                <span style="float:right;">
+                    {{ moogt.stats.get_view_count }} view {{ moogt.stats.get_view_count|pluralize }}
+                </span>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="mgt-mgtr-ctnr">
+
+            <div class="mgt-mgtr mgt-mgtr-left">
+                <div class="mgt-author-pic-container">
+                    <a href="{% url 'users:anonymous_profile' moogt.get_proposition.username %}">
+                        {% avatar moogt.get_proposition 60 class="mgt-author-pic" %}
+                    </a>
+                </div>
+                <div class="mgtr-name">
+                    <b>{% moogter_user_display moogt.get_proposition %}</b>
+                </div>
+            </div>
+
+            {% if moogt.get_opposition %}
+            <div class="mgt-mgtr mgt-mgtr-right">
+                <div class="mgt-author-pic-container">
+                    <a href="{% url 'users:anonymous_profile' moogt.get_opposition.username %}">
+                        {% avatar moogt.get_opposition 60 class="mgt-author-pic" %}
+                    </a>
+                </div>
+                <div class="mgtr-name">
+                    <b>{% moogter_user_display moogt.get_opposition %}</b>
+                </div>
+            </div>
+            {% endif %}
+            <div style="clear: both;"></div>
+        </div>
+        <div class="mgt-body">
+            <h4><a class="mgt-link" href="{% url 'meda:detail' moogt.id %}">{{ moogt.get_resolution }}</a></h4>
+            <p>
+                <!-- Show the first argument, it should be by the proposition. -->
+                {{ moogt.arguments.all.0.argument }}
+            </p>
+        </div>
+    </div>
+    {% if moogt.stats.func_has_any_votes %}
+    <div class="mgt-progress">
+        <div class="left" style="width: {{ moogt.stats.func_proposition_win_percent }}%"></div>
+        <div class="right" style="width: {{ moogt.stats.func_opposition_win_percent }}%"></div>
+    </div>
+    {% endif %}
+</article>

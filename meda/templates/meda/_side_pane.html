@@ -1,0 +1,60 @@
+{% load static %}
+{% load compile_static %}
+{% load avatar_tags %}
+{% load users_tags %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'meda/sidepane.scss'|compile %}" />
+
+<div class="side-pane mt-10 sticky-top">
+    <div class="mgt-author-pic-container">
+        <a href="{% url 'users:logged_in_profile' %}">
+            {% avatar user class="mgt-author-pic" %}
+        </a>
+    </div>
+    <div class="user-name">
+        {% if user.is_authenticated %}
+        <h6>{% moogter_user_display user %}</h6>
+        {% else %}
+        <a href="{% url 'account_login' %}">Sign in</a> or <a href="{% url 'account_signup' %}">Sign up</a>
+        {% endif %}
+    </div>
+
+    <div class="side-pane-info">
+        <span class="side-pane-number-container">
+            <b>
+                <span id="id_xp_pts">{{ user.profile.xp|default:"0" }}</span>
+            </b>
+        </span>
+        <span class="side-pane-label"><b>Experience Points</b></span>
+    </div>
+
+    <div class="side-pane-followers">
+        <div class="float-left">
+            <a href="{% url 'users:logged_in_profile' %}#followers">
+                <div class="stat-number">
+                <b>{{ user.followers.count }}</b>
+                </div>
+                <div>
+                    <b>Followers</b>
+                </div>
+            </a>
+
+        </div>
+        <div class="float-right">
+            <a href="{% url 'users:logged_in_profile' %}#followings">
+                <div class="stat-number">
+                <b>{{ user.followings.count }}</b>
+                </div>
+                <div>
+                    <b>Following</b>
+                </div>
+            </a>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <hr>
+    <div class="side-pane-nav"><b>Saved Moogts</b></div>
+    <div class="side-pane-nav"><b>Public Prompts</b></div>
+    <div class="side-pane-nav"><b>Moogt History</b></div>
+</div>

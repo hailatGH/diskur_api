@@ -1,0 +1,116 @@
+{% extends 'meda/base.html' %}
+
+{% load users_tags %}
+{% load meda_tags %}
+{% load humanize %}
+{% load static %}
+
+{% block content %}
+<hr>
+<p>
+    <h4>{{ moogt.get_resolution }}</h4>
+</p>
+<p> {{ moogt.get_created_at|naturaltime }}</p>
+<p>{{ moogt.stats.get_view_count }} view{{ moogt.stats.get_view_count|pluralize }}</p>
+{% if render_moogt_clock %}
+<div class="mgt-clock">
+    Expires in <span id="overall-clock-timer" data-expire-time-seconds={{ moogt_clock_seconds }}></span>.
+</div>
+{% endif %}
+<hr>
+<div id="id_argument_list">
+    {% for argument in moogt.arguments.all %}
+    <a name="{{argument.id}}" a></a>
+    {% argument_card argument user %}
+    {% endfor %}
+</div>
+
+{% if moogt.get_end_requested %}
+<div class="mgt-ended">
+    <p>
+        This Moogt was ended by
+        {% if user == moogt.func_ended_by %}you{% else %}{% moogter_user_display moogt.func_ended_by %}{% endif %} with status
+        <b>{{moogt.func_end_status }}</b>.
+    </p>
+    {% if not moogt.get_has_ended %}
+    <p>
+        {% if is_self_turn %}You get{% else %}{% moogter_user_display next_turn_user %} gets{% endif %} the last word.
+    </p>
+    {% endif %}
+</div>
+{% endif %}
+
+{% if render_idle_timer %}
+<div class="mgt-idle-timer">
+    <p>
+        Waiting <span id="idle-timer" data-expire-time-seconds={{ idle_timer_expire_seconds }}></span> for
+        {% if is_self_turn %}you{% else %}{% moogter_user_display next_turn_user %}{% endif %} to respond.
+    </p>
+</div>
+{% endif %}
+
+{% if render_argument_form %}
+
+{% argument_input_card argument_form moogt %}
+
+{% elif render_accept_form %}
+<div class="mt-10 moogt_action_card card">
+    <div class="card-body">
+        <form action="{% url 'meda:accept' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="moogt_id" value={{ moogt.id }}>
+            <input type="submit" value="Accept Moogt as opposition.">
+        </form>
+    </div>
+</div>
+{% elif render_invite_button %}
+<div class="mt-10 moogt_action_card card">
+    <div class="card-body">
+        <p class="card-text">Invite someone to join you on this moogt.</p>
+        <a href="#" id="id_invitation_modal_btn" class="btn btn-secondary" data-toggle="modal"
+            data-target="#invitationModal">Send Invitation</a>
+    </div>
+</div>
+
+{% invitation_modal moogt %}
+
+{% elif render_invitation_card %}
+<div class="mt-10 moogt_action_card card">
+    <div class="card-body">
+        <p class="card-text"><b>{% moogter_user_display invitation.inviter %}</b> has invited you to join him on this
+            Moogt.</p>
+        <a id="id_decline_invitation" data-invitation-id="{{invitation.id}}"
+            data-url="{% url 'meda:update_invitation' %}" class="btn btn-secondary">Decline</a>
+        <a id="id_accept_invitation" data-invitation-id="{{invitation.id}}"
+            data-url="{% url 'meda:update_invitation' %}" class="btn btn-outline-secondary">Accept</a>
+    </div>
+</div>
+{% elif render_waiting_card%}
+<div class="mt-10 moogt_action_card card">
+    <div class="card-body">
+        <p class="card-text">Waiting to hear back from {% moogter_user_display invitation.invitee %}.</p>
+        <a id="id_cancel_invitation" data-invitation-id="{{invitation.id}}"
+            data-url="{% url 'meda:update_invitation' %}" class="btn btn-secondary">Cancel Invitation</a>
+    </div>
+</div>
+{% endif %}
+
+{% if moogt.func_has_expired %}
+<div class="mgt-expired">
+    <p>
+        This Moogt expired {{ moogt.func_expire_time|naturaltime }}.
+    </p>
+</div>
+{% endif %}
+{% endblock content %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/lib/jquery.countdown.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/input.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lib/typeahead.bundle.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/typeahead.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/formatters.js' %}"></script>
+<script type="text/javascript" language="javascript" src="{% static 'js/utils.js' %}"></script>
+<script type="text/javascript" language="javascript" src="{% static 'js/event_handlers.js' %}"></script>
+{% endblock scripts %}

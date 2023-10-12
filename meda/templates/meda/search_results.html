@@ -1,0 +1,35 @@
+{% extends 'meda/base.html' %}
+
+{% load static %}
+{% load meda_tags %}
+
+
+{% block content %}
+    {% if moogts_count > 0 %}
+    <h2><strong>{{ moogts_count }}</strong> result for "<strong>{{ q }}</strong>"</h2>
+    {% else %}
+    <h2><strong>No</strong> result for "<strong>{{ q }}</strong>"</h2>
+    {% endif %}
+<hr>
+<div class="infinite-container" id="moogt_list">
+	{% for moogt in moogts %}
+	<div class="infinite-item">
+		{% moogt_card moogt %}
+	</div>
+	{% endfor %}
+</div>
+
+<div class="loading" style="display: none;">
+	Loading...
+</div>
+
+{% if moogts.has_next %}
+<a class="infinite-more-link" href="?q={{ q }}&page={{ moogts.next_page_number }}">More</a>
+{% endif %}
+{% endblock content %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/input.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/way_point.js' %}"></script>
+{% endblock scripts %}

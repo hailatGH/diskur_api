@@ -1,0 +1,1612 @@
+[
+{
+  "model": "meda.moogt",
+  "pk": 1,
+  "fields": {
+    "resolution": "US states should allow businesses to reopen.",
+    "description": null,
+    "proposition": 1,
+    "opposition": null,
+    "moderator": null,
+    "next_turn_proposition": true,
+    "created_at": "2020-04-21T18:36:29.263Z",
+    "updated_at": "2020-04-21T18:36:29.299Z",
+    "has_ended": false,
+    "end_requested": false,
+    "end_requested_by_proposition": false,
+    "is_premiering": false,
+    "premiering_duration": null,
+    "end_request_status": null,
+    "visibility": "PUBLIC",
+    "type": "DUO",
+    "started_at": null,
+    "latest_argument_added_at": "2020-04-21T18:36:29.263Z",
+    "max_duration": "01:00:00",
+    "idle_timeout_duration": "00:06:00",
+    "thumbnail": "",
+    "tags": []
+  }
+},
+{
+  "model": "meda.moogt",
+  "pk": 2,
+  "fields": {
+    "resolution": "Testing",
+    "description": "jkleaf",
+    "proposition": 2,
+    "opposition": null,
+    "moderator": null,
+    "next_turn_proposition": false,
+    "created_at": "2020-04-22T08:15:10.083Z",
+    "updated_at": "2020-04-22T08:16:09.946Z",
+    "has_ended": false,
+    "end_requested": false,
+    "end_requested_by_proposition": false,
+    "is_premiering": false,
+    "premiering_duration": null,
+    "end_request_status": null,
+    "visibility": "PUBLIC",
+    "type": "DUO",
+    "started_at": null,
+    "latest_argument_added_at": "2020-04-22T08:16:09.945Z",
+    "max_duration": "01:00:00",
+    "idle_timeout_duration": "00:06:00",
+    "thumbnail": "",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "meda.moogt",
+  "pk": 3,
+  "fields": {
+    "resolution": "Something isnt nothing",
+    "description": "",
+    "proposition": 4,
+    "opposition": 2,
+    "moderator": null,
+    "next_turn_proposition": true,
+    "created_at": "2020-04-22T08:20:35.477Z",
+    "updated_at": "2020-04-25T00:38:09.609Z",
+    "has_ended": false,
+    "end_requested": false,
+    "end_requested_by_proposition": false,
+    "is_premiering": false,
+    "premiering_duration": null,
+    "end_request_status": null,
+    "visibility": "PUBLIC",
+    "type": "DUO",
+    "started_at": "2020-04-22T08:31:28.238Z",
+    "latest_argument_added_at": "2020-04-25T00:31:28.238Z",
+    "max_duration": "365 00:00:00",
+    "idle_timeout_duration": "01:00:00",
+    "thumbnail": "",
+    "tags": []
+  }
+},
+{
+  "model": "meda.moogt",
+  "pk": 4,
+  "fields": {
+    "resolution": "\"Ashes to Ashes, Dust to Dust\" isn't from The Bible.",
+    "description": null,
+    "proposition": 5,
+    "opposition": 2,
+    "moderator": null,
+    "next_turn_proposition": false,
+    "created_at": "2020-04-23T07:49:21.528Z",
+    "updated_at": "2020-04-25T00:38:37.464Z",
+    "has_ended": false,
+    "end_requested": false,
+    "end_requested_by_proposition": false,
+    "is_premiering": false,
+    "premiering_duration": null,
+    "end_request_status": null,
+    "visibility": "PUBLIC",
+    "type": "DUO",
+    "started_at": "2020-04-25T00:38:37.429Z",
+    "latest_argument_added_at": "2020-04-25T00:38:37.429Z",
+    "max_duration": "01:00:00",
+    "idle_timeout_duration": "00:06:00",
+    "thumbnail": "",
+    "tags": []
+  }
+},
+{
+  "model": "meda.moogt",
+  "pk": 5,
+  "fields": {
+    "resolution": "Duo moogt between nebiyu and Sol.",
+    "description": null,
+    "proposition": 1,
+    "opposition": null,
+    "moderator": null,
+    "next_turn_proposition": true,
+    "created_at": "2020-04-29T19:42:43.089Z",
+    "updated_at": "2020-04-29T19:42:43.097Z",
+    "has_ended": false,
+    "end_requested": false,
+    "end_requested_by_proposition": false,
+    "is_premiering": false,
+    "premiering_duration": null,
+    "end_request_status": null,
+    "visibility": "PUBLIC",
+    "type": "DUO",
+    "started_at": null,
+    "latest_argument_added_at": "2020-04-29T19:42:43.090Z",
+    "max_duration": "365 00:00:00",
+    "idle_timeout_duration": "01:00:00",
+    "thumbnail": "",
+    "tags": []
+  }
+},
+{
+  "model": "meda.moogt",
+  "pk": 6,
+  "fields": {
+    "resolution": "Duo moogt between nebiyu and yodi",
+    "description": null,
+    "proposition": 1,
+    "opposition": null,
+    "moderator": null,
+    "next_turn_proposition": true,
+    "created_at": "2020-04-29T19:43:18.642Z",
+    "updated_at": "2020-04-29T19:43:18.644Z",
+    "has_ended": false,
+    "end_requested": false,
+    "end_requested_by_proposition": false,
+    "is_premiering": false,
+    "premiering_duration": null,
+    "end_request_status": null,
+    "visibility": "PUBLIC",
+    "type": "DUO",
+    "started_at": null,
+    "latest_argument_added_at": "2020-04-29T19:43:18.642Z",
+    "max_duration": "365 00:00:00",
+    "idle_timeout_duration": "01:00:00",
+    "thumbnail": "",
+    "tags": []
+  }
+},
+{
+  "model": "meda.moogt",
+  "pk": 7,
+  "fields": {
+    "resolution": "Duo moogt between nebiyu and aman",
+    "description": null,
+    "proposition": 1,
+    "opposition": null,
+    "moderator": null,
+    "next_turn_proposition": false,
+    "created_at": "2020-04-29T19:44:04.088Z",
+    "updated_at": "2020-04-29T19:44:27.968Z",
+    "has_ended": false,
+    "end_requested": false,
+    "end_requested_by_proposition": false,
+    "is_premiering": false,
+    "premiering_duration": null,
+    "end_request_status": null,
+    "visibility": "PUBLIC",
+    "type": "DUO",
+    "started_at": null,
+    "latest_argument_added_at": "2020-04-29T19:44:27.968Z",
+    "max_duration": "365 00:00:00",
+    "idle_timeout_duration": "01:00:00",
+    "thumbnail": "",
+    "tags": []
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 1,
+  "fields": {
+    "moogt": 2,
+    "user": 2,
+    "argument": "JAwdfoadwfd",
+    "created_at": "2020-04-22T08:16:09.874Z",
+    "updated_at": "2020-04-22T08:16:09.910Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 2,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T09:31:28.238Z",
+    "updated_at": "2020-04-22T10:26:16.094Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 3,
+  "fields": {
+    "moogt": 4,
+    "user": 5,
+    "argument": "\"Ashes to Ashes, Dust to Dust\" isn't from The Bible.",
+    "created_at": "2020-04-23T07:50:10.576Z",
+    "updated_at": "2020-04-23T07:50:10.612Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 4,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-22T10:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.320Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 5,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T11:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.402Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 6,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-22T12:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.439Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 7,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T13:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.475Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 8,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-22T14:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.511Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 9,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T15:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.547Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 10,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-22T16:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.583Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 11,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T17:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.619Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 12,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-22T18:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.655Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 13,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T19:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.691Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 14,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-22T20:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.727Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 15,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T21:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.763Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 16,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-22T22:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.801Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 17,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-22T23:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.837Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 18,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T00:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.872Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 19,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T01:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.907Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 20,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T02:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.943Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 21,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T03:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:14.979Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 22,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T04:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.014Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 23,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T05:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.051Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 24,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T06:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.086Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 25,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T07:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.122Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 26,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T08:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.159Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 27,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T09:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.195Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 28,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T10:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.232Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 29,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T11:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.269Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 30,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T12:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.306Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 31,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T13:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.343Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 32,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T14:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.380Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 33,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T15:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.416Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 34,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T16:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.451Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 35,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T17:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.490Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 36,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T18:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.525Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 37,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T19:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.562Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 38,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T20:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.599Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 39,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T21:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.639Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 40,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-23T22:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.675Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 41,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-23T23:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.713Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 42,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T00:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.751Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 43,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T01:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.786Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 44,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T02:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.822Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 45,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T03:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.860Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 46,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T04:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.899Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 47,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T05:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.934Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 48,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T06:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:15.971Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 49,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T07:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:16.007Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 50,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T08:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:16.044Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 51,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T09:31:28.238Z",
+    "updated_at": "2020-04-24T09:35:16.083Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 52,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T10:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.039Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 53,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T11:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.111Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 54,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T12:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.146Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 55,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T13:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.182Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 56,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T14:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.217Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 57,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T15:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.252Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 58,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T16:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.288Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 59,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T17:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.326Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 60,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T18:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.361Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 61,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T19:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.397Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 62,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T20:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.432Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 63,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T21:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.468Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 64,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-24T22:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.503Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 65,
+  "fields": {
+    "moogt": 3,
+    "user": 4,
+    "argument": "",
+    "created_at": "2020-04-24T23:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.538Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 66,
+  "fields": {
+    "moogt": 3,
+    "user": 2,
+    "argument": "",
+    "created_at": "2020-04-25T00:31:28.238Z",
+    "updated_at": "2020-04-25T00:38:09.573Z"
+  }
+},
+{
+  "model": "meda.argument",
+  "pk": 67,
+  "fields": {
+    "moogt": 7,
+    "user": 1,
+    "argument": "I am going to win this debate aman you like it or not.",
+    "created_at": "2020-04-29T19:44:27.966Z",
+    "updated_at": "2020-04-29T19:44:27.967Z"
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 1,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 2,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 3,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 4,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 5,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 6,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 7,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 8,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 9,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 10,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 11,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 12,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 13,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 14,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 15,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 16,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 17,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 18,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 19,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 20,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 21,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 22,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 23,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 24,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 25,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 26,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 27,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 28,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 29,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 30,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 31,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 32,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 33,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 34,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 35,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 36,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 37,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 38,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 39,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 40,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 41,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 42,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 43,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 44,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 45,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 46,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 47,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 48,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 49,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 50,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 51,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 52,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 53,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 54,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 55,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 56,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 57,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 58,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 59,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 60,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 61,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 62,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 63,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 64,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 65,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 66,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.argumentstats",
+  "pk": 67,
+  "fields": {
+    "upvotes": [],
+    "downvotes": [],
+    "applauds": []
+  }
+},
+{
+  "model": "meda.invitation",
+  "pk": 1,
+  "fields": {
+    "moogt": 2,
+    "inviter": 2,
+    "invitee": 3,
+    "status": "CANCELLED",
+    "created_at": "2020-04-22T08:15:10.489Z",
+    "updated_at": "2020-04-25T00:39:00.871Z"
+  }
+},
+{
+  "model": "meda.invitation",
+  "pk": 2,
+  "fields": {
+    "moogt": 3,
+    "inviter": 4,
+    "invitee": 2,
+    "status": "ACCEPTED",
+    "created_at": "2020-04-22T08:20:35.664Z",
+    "updated_at": "2020-04-22T08:31:28.420Z"
+  }
+},
+{
+  "model": "meda.invitation",
+  "pk": 3,
+  "fields": {
+    "moogt": 4,
+    "inviter": 5,
+    "invitee": 2,
+    "status": "ACCEPTED",
+    "created_at": "2020-04-23T07:49:21.718Z",
+    "updated_at": "2020-04-25T00:38:37.609Z"
+  }
+},
+{
+  "model": "meda.invitation",
+  "pk": 4,
+  "fields": {
+    "moogt": 5,
+    "inviter": 1,
+    "invitee": 5,
+    "status": "PENDING",
+    "created_at": "2020-04-29T19:42:43.115Z",
+    "updated_at": "2020-04-29T19:42:43.120Z"
+  }
+},
+{
+  "model": "meda.invitation",
+  "pk": 5,
+  "fields": {
+    "moogt": 6,
+    "inviter": 1,
+    "invitee": 2,
+    "status": "PENDING",
+    "created_at": "2020-04-29T19:43:18.648Z",
+    "updated_at": "2020-04-29T19:43:18.650Z"
+  }
+},
+{
+  "model": "meda.invitation",
+  "pk": 6,
+  "fields": {
+    "moogt": 7,
+    "inviter": 1,
+    "invitee": 7,
+    "status": "PENDING",
+    "created_at": "2020-04-29T19:44:04.093Z",
+    "updated_at": "2020-04-29T19:44:04.094Z"
+  }
+}
+]

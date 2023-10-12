@@ -1,0 +1,443 @@
+[
+{
+  "model": "users.moogtmedauser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$2dok70fPBWN7$z82DQknlfJfRSLtrHJz1pHTYiqVeCSkxLTlpjgr4nxI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "nebiyu1",
+    "first_name": "Nebiyu",
+    "last_name": "Elias",
+    "email": "nebiyuelias1@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-04-21T18:35:31.723Z",
+    "groups": [],
+    "user_permissions": [],
+    "follower": [
+      2,
+      4,
+      7
+    ],
+    "following": [
+      2
+    ],
+    "following_moogts": []
+  }
+},
+{
+  "model": "users.moogtmedauser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$fH2jMsoU2LDO$ub8OXtCgyeyJQSo40Thm2ECuZ2B7u8ejERSPEzuPn/8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "yodiye",
+    "first_name": "Yodahe",
+    "last_name": "Abebe",
+    "email": "yodahe.abebe@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-04-22T08:08:50.003Z",
+    "groups": [],
+    "user_permissions": [],
+    "follower": [
+      1,
+      4,
+      7
+    ],
+    "following": [
+      1,
+      4
+    ],
+    "following_moogts": []
+  }
+},
+{
+  "model": "users.moogtmedauser",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$s30SKIT7SIAE$qZTcSlwonXP+pJyF8e+aVt+BaTI+cA8IU+jZEm9Dq4E=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "beck",
+    "first_name": "Bereket",
+    "last_name": "Taffese",
+    "email": "taffeseb@gmai.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-04-22T08:09:39.939Z",
+    "last_opened_moogt": null,
+    "groups": [],
+    "user_permissions": [],
+    "follower": [],
+    "following": [],
+    "following_moogts": []
+  }
+},
+{
+  "model": "users.moogtmedauser",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$8MklEpV13lRi$TQIY6cocfuEthpF+rBSMtMANUvmgPH3rVG8ktJju+sE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "beckmoogter",
+    "first_name": "Bereket",
+    "last_name": "Taffese",
+    "email": "moogter@moogter.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-04-22T08:19:49.777Z",
+    "groups": [],
+    "user_permissions": [],
+    "follower": [
+      2,
+      7
+    ],
+    "following": [
+      1,
+      2
+    ],
+    "following_moogts": []
+  }
+},
+{
+  "model": "users.moogtmedauser",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$qZaWxW3jLpY2$fi6HJ7gA8QtdCzjQQ44jB6zvJTD0DoOOy8A0vwPYNvg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sol34",
+    "first_name": "Sol",
+    "last_name": "Shiferaw",
+    "email": "s.seshiferaw@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-04-22T08:24:18.336Z",
+    "groups": [],
+    "user_permissions": [],
+    "follower": [
+      7
+    ],
+    "following": [],
+    "following_moogts": []
+  }
+},
+{
+  "model": "users.moogtmedauser",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$IY9hoy07PCmB$1CZAGQEUH9UVAVsr/9i7/LAbNeioFkaT3er4W/LC7ao=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bik",
+    "first_name": "Biruk",
+    "last_name": "Megersa",
+    "email": "biruk@bete-semay.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-04-24T09:29:08.214Z",
+    "last_opened_moogt": null,
+    "groups": [],
+    "user_permissions": [],
+    "follower": [],
+    "following": [],
+    "following_moogts": []
+  }
+},
+{
+  "model": "users.moogtmedauser",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$tJ5aZaSuJfnO$KNOwcnwP4MyIQ+CLHX6Elrhh8lbfK+CjeXbxNkbhCc8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mannyioi",
+    "first_name": "Amanuel",
+    "last_name": "Teferi",
+    "email": "aman.teferi.79@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-04-24T09:29:12.512Z",
+    "last_opened_moogt": null,
+    "groups": [],
+    "user_permissions": [],
+    "follower": [],
+    "following": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "following_moogts": []
+  }
+},
+{
+  "model": "users.profile",
+  "pk": 1,
+  "fields": {}
+},
+{
+  "model": "users.profile",
+  "pk": 2,
+  "fields": {}
+},
+{
+  "model": "users.profile",
+  "pk": 3,
+  "fields": {}
+},
+{
+  "model": "users.profile",
+  "pk": 4,
+  "fields": {}
+},
+{
+  "model": "users.profile",
+  "pk": 5,
+  "fields": {}
+},
+{
+  "model": "users.profile",
+  "pk": 6,
+  "fields": {}
+},
+{
+  "model": "users.profile",
+  "pk": 7,
+  "fields": {}
+},
+{
+  "model": "users.activity",
+  "pk": 1,
+  "fields": {
+    "profile": 1,
+    "created_at": "2020-04-21T18:36:29.371Z",
+    "type": "create_moogt",
+    "object_id": 1
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 2,
+  "fields": {
+    "profile": 2,
+    "created_at": "2020-04-22T08:15:10.414Z",
+    "type": "create_moogt",
+    "object_id": 2
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 3,
+  "fields": {
+    "profile": 2,
+    "created_at": "2020-04-22T08:16:10.019Z",
+    "type": "create_argument",
+    "object_id": 1
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 4,
+  "fields": {
+    "profile": 4,
+    "created_at": "2020-04-22T08:20:35.589Z",
+    "type": "create_moogt",
+    "object_id": 3
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 5,
+  "fields": {
+    "profile": 4,
+    "created_at": "2020-04-22T08:26:11.132Z",
+    "type": "follow_user",
+    "object_id": 2
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 6,
+  "fields": {
+    "profile": 4,
+    "created_at": "2020-04-22T08:27:10.862Z",
+    "type": "follow_user",
+    "object_id": 1
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 7,
+  "fields": {
+    "profile": 2,
+    "created_at": "2020-04-22T08:27:22.490Z",
+    "type": "follow_user",
+    "object_id": 1
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 8,
+  "fields": {
+    "profile": 2,
+    "created_at": "2020-04-22T08:32:10.466Z",
+    "type": "follow_user",
+    "object_id": 4
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 9,
+  "fields": {
+    "profile": 1,
+    "created_at": "2020-04-22T08:51:44.323Z",
+    "type": "follow_user",
+    "object_id": 2
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 10,
+  "fields": {
+    "profile": 5,
+    "created_at": "2020-04-23T07:49:21.644Z",
+    "type": "create_moogt",
+    "object_id": 4
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 11,
+  "fields": {
+    "profile": 5,
+    "created_at": "2020-04-23T07:50:10.728Z",
+    "type": "create_argument",
+    "object_id": 3
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 12,
+  "fields": {
+    "profile": 7,
+    "created_at": "2020-04-24T09:30:11.374Z",
+    "type": "follow_user",
+    "object_id": 2
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 13,
+  "fields": {
+    "profile": 7,
+    "created_at": "2020-04-24T09:30:19.838Z",
+    "type": "follow_user",
+    "object_id": 1
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 14,
+  "fields": {
+    "profile": 5,
+    "created_at": "2020-04-24T09:31:14.708Z",
+    "type": "make_comment",
+    "object_id": 1
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 15,
+  "fields": {
+    "profile": 7,
+    "created_at": "2020-04-24T09:31:15.322Z",
+    "type": "follow_user",
+    "object_id": 4
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 16,
+  "fields": {
+    "profile": 7,
+    "created_at": "2020-04-24T09:31:31.138Z",
+    "type": "follow_user",
+    "object_id": 5
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 17,
+  "fields": {
+    "profile": 2,
+    "created_at": "2020-04-24T09:31:35.363Z",
+    "type": "make_comment",
+    "object_id": 2
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 18,
+  "fields": {
+    "profile": 2,
+    "created_at": "2020-04-24T09:31:37.413Z",
+    "type": "make_comment",
+    "object_id": 3
+  }
+},
+{
+  "model": "users.activity",
+  "pk": 19,
+  "fields": {
+    "profile": 7,
+    "created_at": "2020-04-24T09:31:45.774Z",
+    "type": "make_comment",
+    "object_id": 4
+  }
+},
+{
+  "model": "users.creditpoint",
+  "pk": 1,
+  "fields": {
+    "activity": 14,
+    "type": "make_comment",
+    "profile": 5,
+    "created_at": "2020-04-24T09:31:14.860Z"
+  }
+},
+{
+  "model": "users.creditpoint",
+  "pk": 2,
+  "fields": {
+    "activity": 17,
+    "type": "make_comment",
+    "profile": 2,
+    "created_at": "2020-04-24T09:31:35.509Z"
+  }
+},
+{
+  "model": "users.creditpoint",
+  "pk": 3,
+  "fields": {
+    "activity": 18,
+    "type": "make_comment",
+    "profile": 2,
+    "created_at": "2020-04-24T09:31:37.562Z"
+  }
+},
+{
+  "model": "users.creditpoint",
+  "pk": 4,
+  "fields": {
+    "activity": 19,
+    "type": "make_comment",
+    "profile": 7,
+    "created_at": "2020-04-24T09:31:45.924Z"
+  }
+}
+]

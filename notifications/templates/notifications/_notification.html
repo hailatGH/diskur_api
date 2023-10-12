@@ -1,0 +1,23 @@
+{% load avatar_tags %}
+{% load users_tags %}
+{% load humanize %}
+<div class="media">
+    <img src="{% avatar_url notification.actor 40 %}" class="align-self-center  mr-3 rounded-circle">
+    <div class="media-body">
+        <span class="mt-0">
+            <a href="#">{% moogter_user_display notification.actor %}</a>
+            {{ notification.verb }} on
+            <a href="{{ notification.target.get_absolute_url }}">
+                {{ notification.target.func_title }}
+            </a>
+        </span>
+        <p class="mb-0">
+            <small>{{ notification.action_object.func_title }}</small>
+        </p>
+        <div>
+            <a href="{{ notification.action_object.get_absolute_url }}">
+                <small>{{ notification.timestamp|naturaltime }}</small>
+            </a>
+        </div>
+    </div>
+</div>

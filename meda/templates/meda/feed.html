@@ -1,0 +1,10 @@
+{% extends 'meda/browse_base.html' %}
+
+{% load static %}
+
+{% block infinite_container_id %}moogt_feed_list{% endblock %}
+
+{% block scripts %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/feed_tab.js' %}"></script>
+{% endblock %}

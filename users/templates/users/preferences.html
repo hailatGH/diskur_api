@@ -1,0 +1,30 @@
+{% extends 'meda/base.html' %}
+
+{% block content %}
+    <h2>Preferences</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-3">
+            <div class="list-group">
+                {% for s in registry.section_objects.values %}
+                    <a class="list-group-item list-group-item-action {% if section.name == s.verbose_name %} active {% endif %}"
+                       href="{% url 'users:user_preferences_section' section=s.name %}"
+                    >{{ s.verbose_name | title }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col">
+            <form action="" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-default" type="submit" style="background-color: buttonface;">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <ul class="sections">
+
+    </ul>
+
+
+{% endblock %}

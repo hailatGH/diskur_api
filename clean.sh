@@ -1,0 +1,12 @@
+rm -rf api/migrations
+rm -rf arguments/migrations
+rm -rf chat/migrations
+rm -rf invitations/migrations
+rm -rf meda/migrations
+rm -rf moogter_bot/migrations
+rm -rf moogtmeda/migrations
+rm -rf moogts/migrations
+rm -rf notifications/migrations
+rm -rf polls/migrations
+rm -rf users/migrations
+rm -rf views/migrations

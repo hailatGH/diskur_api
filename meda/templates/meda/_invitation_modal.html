@@ -1,0 +1,32 @@
+<div class="modal fade" id="invitationModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Invite someone</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="id_invitation_modal_body" class="modal-body">
+          <div class="form-group">
+                <label for="id_modal_invitees">Invite Someone:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <select id="id_modal_invitees"
+                        multiple="multiple"
+                        data-url="{% url 'users:get_usernames_ajax' %}"
+                        name="invitees">
+                    </select>
+                </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <input id="id_moogt_id_field" type="hidden" value={{moogt.id}}>
+        <button type="button" class="btn btn-outline-secondary" data-url="{% url 'meda:invite_moogter' %}"
+          id="id_invite_moogter" data-dismiss="modal">Invite</button>
+      </div>
+    </div>
+  </div>
+</div>

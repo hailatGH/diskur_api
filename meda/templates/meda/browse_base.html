@@ -1,0 +1,69 @@
+{% extends 'meda/base.html' %}
+
+{% load static %}
+{% load meda_tags %}
+
+
+{% block content %}
+{% if user.is_authenticated %}
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link" id="browseTabLink" href="{% url 'meda:browse' %}">Browse</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="feedTabLink" href="{% url 'meda:feed' %}">Feed</a>
+  </li>
+</ul>
+
+<article class="mgt-card" xmlns="http://www.w3.org/1999/html">
+	<div class="mgt-card-container">
+		<form id="moogtForm" autocomplete="off">
+			{{ moogt_form.as_p }}
+            <div class="collapse" id="moogtFormCollapse">
+                {{ moogt_additional_form.as_p }}
+                <div class="form-group">
+                    <label for="id_invitees">Invite a friend to debate or leave empty for a public prompt.</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <select id="id_invitees"
+                            multiple="multiple"
+                            data-url="{% url 'users:get_usernames_ajax' %}"
+                            name="invitees">
+                        </select>
+                    </div>
+                </div>
+                <input id="id_submit_moogt" data-url="{% url 'meda:create' %}" type="submit" value="Submit"
+                       class="pull-right btn btn-outline-secondary">
+            </div>
+        </form>
+		<div style="clear: both;"></div>
+	</div>
+</article>
+{% endif %}
+
+<div class="infinite-container" id="{% block infinite_container_id %}{% endblock %}">
+	{% for moogt in moogts %}
+	<div class="infinite-item">
+		{% moogt_card moogt %}
+	</div>
+	{% endfor %}
+</div>
+
+<!-- TODO: Replace with a better looking loading icon.-->
+<div class="loading" style="display: none;">
+	Loading...
+</div>
+
+{% if page_obj.has_next %}
+<a class="infinite-more-link" href="?page={{ page_obj.next_page_number }}">More</a>
+{% endif %}
+
+{% endblock content %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/input.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/way_point.js' %}"></script>
+{% endblock scripts %}

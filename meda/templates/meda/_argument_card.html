@@ -1,0 +1,59 @@
+{% load humanize %}
+{% load avatar_tags %}
+{% load users_tags %}
+{% load comments %}
+
+<article class="{% if argument.func_empty %}mgt-card-missed{% else %}mgt-card{% endif %}">
+    <div class="mgt-card-container">
+        <div class="sc-author-time">
+            {{ argument.get_created_at|naturaltime }}
+        </div>
+        <hr>
+        <div class="mgt-mgtr-ctnr">
+            <div
+                class="mgt-mgtr {% if argument.get_user == argument.get_moogt.get_proposition %} mgt-mgtr-left {% else %} mgt-mgtr-right {% endif %}">
+                <div class="mgt-author-pic-container">
+                    <a href="{% url 'users:anonymous_profile' argument.get_user.username %}">
+                        {% avatar argument.get_user class="mgt-author-pic" %}
+                    </a>
+                </div>
+                <div class="mgtr-name">
+                    <b>{% moogter_user_display argument.get_user %}</b>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="mgt-body">
+            {% if argument.func_empty %}
+            <p>
+                <div class="mgt-missed-turn">
+                    Missed turn.
+                </div>
+            </p>
+            {% else %}
+            <p>
+                {{ argument.get_argument }}
+            </p>
+            <hr>
+            {% if argument.get_moogt.func_has_started %}
+            <div class="voting-wrapper" data-url="{% url 'meda:upvote_downvote' %}">
+                <span class="num-votes" id="num_upvotes_{{ argument.id }}">{{ argument.stats.get_upvotes.count }}</span>
+                <a href="#" id="upvote_{{ argument.id }}"
+                    class="vote-btn {% if disallow_voting %} inactive {% endif %}">
+                    <i class="fas fa-plus-circle fa-lg"></i></a>
+                <a href="#" id="downvote_{{ argument.id }}"
+                    class="vote-btn {% if disallow_voting %} inactive {% endif %}">
+                    <i class="fas fa-minus-circle fa-lg"></i></a>
+                <span class="num-votes" id="num_downvotes_{{ argument.id }}">{{ argument.stats.get_downvotes.count }}</span>
+            </div>
+            {% endif %}
+            {% endif %}
+            {% get_comment_count for argument as comment_count %}
+            <div class='mgt-comment-count'>
+                <a href="#" class="load-comments-btn" id="load_comments_{{ argument.id }}"><i class="fa fa-comments"
+                        aria-hidden="true"></i>&nbsp;{{ comment_count }}</a>
+            </div>
+            <div class="mgt-comments-wrapper" id="comments_wrapper_{{ argument.id }}" data-url="{% url 'meda:get_comments_ajax' %}"></div>
+        </div>
+    </div>
+</article>

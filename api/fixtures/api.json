@@ -1,0 +1,267 @@
+[
+{
+  "model": "api.poll",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "title": "Businesses should reopen immediately.",
+    "start_date": "2020-04-21T18:38:20.773Z",
+    "end_date": "2020-04-22T18:38:20.773Z",
+    "created_at": "2020-04-21T18:38:20.773Z",
+    "max_duration": "1 00:00:00",
+    "visibility": "PUBLIC"
+  }
+},
+{
+  "model": "api.poll",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "title": "How much would you rate this site on a scale of 1-3",
+    "start_date": "2020-04-22T08:18:30.519Z",
+    "end_date": "2020-04-22T09:18:30.519Z",
+    "created_at": "2020-04-22T08:18:30.519Z",
+    "max_duration": "01:00:00",
+    "visibility": "PUBLIC"
+  }
+},
+{
+  "model": "api.poll",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "title": "How pretty is Donald trump",
+    "start_date": "2020-04-22T08:29:21.116Z",
+    "end_date": "2020-04-22T09:29:21.116Z",
+    "created_at": "2020-04-22T08:29:21.116Z",
+    "max_duration": "01:00:00",
+    "visibility": "PUBLIC"
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 1,
+  "fields": {
+    "poll": 1,
+    "content": "Ofcourse.",
+    "votes": [
+      2
+    ]
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 2,
+  "fields": {
+    "poll": 1,
+    "content": "That could cause troubles.",
+    "votes": []
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 3,
+  "fields": {
+    "poll": 2,
+    "content": "A one",
+    "votes": [
+      4
+    ]
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 4,
+  "fields": {
+    "poll": 2,
+    "content": "A two",
+    "votes": []
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 5,
+  "fields": {
+    "poll": 2,
+    "content": "A three",
+    "votes": []
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 6,
+  "fields": {
+    "poll": 3,
+    "content": "Very pretty",
+    "votes": [
+      2
+    ]
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 7,
+  "fields": {
+    "poll": 3,
+    "content": "Orange",
+    "votes": [
+      1
+    ]
+  }
+},
+{
+  "model": "api.polloption",
+  "pk": 8,
+  "fields": {
+    "poll": 3,
+    "content": "he knows a lot",
+    "votes": [
+      5
+    ]
+  }
+},
+{
+  "model": "api.tag",
+  "pk": 1,
+  "fields": {
+    "name": "#wad"
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "type": "ENDORSE",
+    "content": null,
+    "content_type": 21,
+    "object_id": 2
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "type": "ENDORSE",
+    "content": "Agreement statement.",
+    "content_type": 21,
+    "object_id": 2
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "type": "DISAGREE",
+    "content": null,
+    "content_type": 21,
+    "object_id": 2
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "type": "DISAGREE",
+    "content": "asdfdasfdasf",
+    "content_type": 21,
+    "object_id": 2
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 5,
+  "fields": {
+    "user": 7,
+    "type": "DISAGREE",
+    "content": "disagreement",
+    "content_type": 21,
+    "object_id": 2
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 6,
+  "fields": {
+    "user": 6,
+    "type": "DISAGREE",
+    "content": "hello there",
+    "content_type": 21,
+    "object_id": 2
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 7,
+  "fields": {
+    "user": 5,
+    "type": "ENDORSE",
+    "content": null,
+    "content_type": 21,
+    "object_id": 2
+  }
+},
+{
+  "model": "api.reaction",
+  "pk": 8,
+  "fields": {
+    "user": 6,
+    "type": "DISAGREE",
+    "content": null,
+    "content_type": 21,
+    "object_id": 3
+  }
+},
+{
+  "model": "api.view",
+  "pk": 1,
+  "fields": {
+    "content": "Love at first sight exists.",
+    "visibility": "PUBLIC",
+    "created_at": "2020-04-21T18:39:02.788Z",
+    "user": 1,
+    "banner": "",
+    "type": "VIEW",
+    "counter_point_exists": false,
+    "content_type": null,
+    "object_id": null,
+    "tags": []
+  }
+},
+{
+  "model": "api.view",
+  "pk": 2,
+  "fields": {
+    "content": "This is an interesting test.",
+    "visibility": "PUBLIC",
+    "created_at": "2020-04-22T08:17:27.381Z",
+    "user": 2,
+    "banner": "",
+    "type": "VIEW",
+    "counter_point_exists": false,
+    "content_type": null,
+    "object_id": null,
+    "tags": []
+  }
+},
+{
+  "model": "api.viewscore",
+  "pk": 1,
+  "fields": {
+    "score_now": "0.00",
+    "score_before": "0.00",
+    "score_last_updated_at": "2020-04-21T18:39:03.098Z"
+  }
+},
+{
+  "model": "api.viewscore",
+  "pk": 2,
+  "fields": {
+    "score_now": "11.00",
+    "score_before": "10.00",
+    "score_last_updated_at": "2020-04-22T08:17:27.679Z"
+  }
+}]

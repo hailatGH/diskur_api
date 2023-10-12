@@ -1,0 +1,113 @@
+{% extends 'meda/base.html' %}
+
+{% load meda_tags %}
+{% load avatar_tags %}
+{% load users_tags %}
+{% load humanize %}
+{% load static %}
+
+{% block content %}
+<h2>{% moogter_user_display profile.user %}</h2>
+{% avatar profile.user %}
+<br>
+
+{% if is_self_profile %}
+<a href="{% url 'avatar_change' %}">Change your avatar</a>
+<br>
+Email: {{ user.email }}
+<br>
+<a href="{% url 'account_email' %}">Change your email</a>
+<br>
+
+<hr>
+<h2> Invitations: </h2>
+<ul class="list-group">
+    <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+        Invitations sent to you.
+    </li>
+    {% if profile.user.recieved_invitations.count > 0 %}
+    {% for invitation in profile.user.recieved_invitations.all reversed %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {% moogter_user_display invitation.inviter %} invited you to join him for a Moogt.
+        <a href="{% url 'meda:detail' invitation.moogt.id %}">
+            Respond
+        </a>
+    </li>
+    {% endfor %}
+    {% else %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        You haven't recieved any invitations yet.
+    </li>
+    {% endif %}
+    <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+        Invitations you sent.
+    </li>
+    {% if profile.user.sent_invitations.count > 0  %}
+    {% for invitation in profile.user.sent_invitations.all reversed %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Invitation sent to {% moogter_user_display invitation.invitee %}.
+    </li>
+    {% endfor %}
+    {% else %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        You haven't sent any invitations yet.
+    </li>
+    {% endif %}
+</ul>
+
+<hr>
+<h2>Engagements Created:</h2>
+<br>
+So far you have earned <b>{{ profile.credit_pts }}</b> point{{ profile.credit_pts|pluralize }}
+by creating the following engagement:
+<br>
+<br>
+{% engagements_display profile.credit_pts_count %}
+
+<hr>
+
+<h2> Your activities: </h2>
+<ul class="list-group">
+    {% for activity in profile.activities.all reversed %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{ activity.description }}
+        {% if activity.href %}
+        <a href="{{ activity.href }}">
+            {{ activity.created_at|naturaltime }}
+        </a>
+        {% else %}
+        {{ activity.created_at|naturaltime }}
+        {% endif %}
+        <span class="badge badge-primary badge-pill">+{{ activity.xp }} XPs</span>
+    </li>
+    {% endfor %}
+</ul>
+
+<hr>
+<h2 id="followers">Followers:</h2>
+<ul class="list-group">
+    {% for follower in profile.user.followers.all %}
+        <li class="list-group-item">{% moogter_user_display follower %}</li>
+    {% endfor %}
+</ul>
+
+<hr>
+<h2 id="followings">Following:</h2>
+<ul class="list-group">
+    {% for following in profile.user.followings.all %}
+        <li class="list-group-item">{% moogter_user_display following %}</li>
+    {% endfor %}
+</ul>
+{% elif can_follow_profile_owner %}
+<a id="id_follow_button" data-followee-id="{{profile.user.id}}" data-url="{% url 'users:follow_user' %}"
+    class="btn btn-outline-secondary">Follow</a>
+
+{% endif %}
+<br>
+<br>
+{% endblock content %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/input.js' %}"></script>
+{% endblock scripts %}

@@ -1,0 +1,28 @@
+{% load comments %}
+{% load meda_tags %}
+
+{% get_comment_count for argument as comment_count %}
+<hr>
+{% if allow_commenting %}
+{% get_comment_form for argument as form %}
+<div class="mgt-comment-form-cntr">
+    <textarea id="mgt-comment-textarea-{{ argument.id }}" style="resize:none; margin-bottom: 5px;"
+        placeholder="Write a comment..." class="form-control" rows="3" name="comment"></textarea>
+    <input type="hidden" name="name" value="{{ user.username }}" />
+    <!--TODO(genioshelo): Does it make sense to allow "follow-up".-->
+    <button id="comment_btn_{{ argument.id }}" type="button" class="post-comment-btn btn btn-secondary btn-sm"
+        data-name="{{ user.username }}" data-timestamp="{{ form.timestamp.value }}"
+        data-content-type="{{ form.content_type.value }}" data-object-pk="{{ form.object_pk.value }}"
+        data-security-hash="{{form.security_hash.value }}" data-email="{{ user.email }}"
+        data-url="{{ argument.get_absolute_url }}"
+        data-comments-create-url="{% url 'comments-xtd-api-create' %}">Post</button>
+</div>
+{% endif %}
+{% if comment_count > 0 %}
+<div class="comments">
+    {% get_comment_list for argument as comments %}
+    {% for comment in comments reversed %}
+    {% comment_card user comment %}
+    {% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,27 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Moogter</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{% static 'web/styles.css' %}">
+</head>
+</head>
+<body>
+<app-root></app-root>
+<script src="{% static 'web/runtime-es2015.js' %}" type="module"></script>
+<script src="{% static 'web/runtime-es5.js' %}" nomodule defer></script>
+<script src="{% static 'web/polyfills-es5.js' %}" nomodule defer></script>
+<script src="{% static 'web/polyfills-es2015.js' %}" type="module"></script>
+<script src="{% static 'web/main-es2015.js' %}" type="module"></script>
+<script src="{% static 'web/main-es5.js' %}" nomodule defer></script>
+</body>
+</body>
+</html>

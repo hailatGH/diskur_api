@@ -1,0 +1,30 @@
+{% load i18n %}
+{% load comments %}
+{% load comments_xtd %}
+{% load avatar_tags %}
+{% load users_tags %}
+{% load humanize %}
+
+<div id="c{{ comment.id }}" class="mgt-comment-card-cntr media">
+    <a name="c{{ comment.id }}"></a>
+    <div class="mgt-comment-author-pic-container">
+        <a href="{% url 'users:anonymous_profile' comment.user.username %}">
+            {% avatar comment.user class="mgt-comment-author-pic" %}
+        </a>
+    </div>
+    <div class="media-body">
+        <div class="comment pb-3">
+            <h6 class="mb-1 small d-flex">
+                    <span class="mr-auto p-2">{% moogter_user_display comment.user %}</span>
+                    <span class="p-2">{{ comment.submit_date|naturaltime }}</span>
+            </h6>
+            <div class="content mgt-comment-content">
+                {% if comment.is_removed %}
+                <p class="text-muted">{% trans "This comment has been removed." %}</p>
+                {% else %}
+                    {% include "includes/django_comments_xtd/comment_content.html" with content=comment.comment %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

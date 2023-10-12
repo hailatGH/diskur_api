@@ -1,0 +1,51 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<h1>{% trans "Sign Up" %}</h1>
+
+<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    {% include 'account/error.html' %}
+
+    {% csrf_token %}
+    <label for="id_email">Email:</label>
+    <br>
+    {{ form.email }}
+    <br>
+    <br>
+    <label for="id_username">Username:</label>
+    <br>
+    {{ form.username }}
+    <br>
+    <br>
+    <label for="id_password1">Password:</label>
+    <br>
+    {{ form.password1 }} <input type="checkbox" id="id_reveal_password1"
+        onclick="revealPassword('id_reveal_password1', 'id_password1')"><label for="id_reveal_password1">Show</label>
+    <br>
+    <br>
+    <label for="id_password2">Password (again):</label>
+    <br>
+    {{ form.password2 }} <input type="checkbox" id="id_reveal_password2"
+        onclick="revealPassword('id_reveal_password2', 'id_password2')"><label for="id_reveal_password2">Show</label>
+    <br>
+    <br>
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+</form>
+
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/reveal_password.js' %}">
+</script>
+{% endblock scripts %}

@@ -1,0 +1,28 @@
+<h1>New report</h1>
+
+<div><strong>Reported By: </strong> {{reported_by}}</div>
+
+<div><strong>Reported On: </strong> {{reported_on}}</div>
+
+<div><strong>Item Created At: </strong> {{created_at}}</div>
+
+<div><strong>Report Time: </strong> {{reported_at}}</div>
+
+<div>
+  <strong>Reason for report:</strong>
+  <p>{{reason}}</p>
+</div>
+
+<div><strong>Link to Item: </strong> <a href="{{link}}">{{link}}</a></div>
+
+<div>
+  <strong>Link to Report: </strong>
+  <a href="{{ protocol }}://{{ domain }}{{report_link}}"
+    >{{ protocol }}://{{ domain }}{{report_link}}</a
+  >
+</div>
+
+<p>
+  NB: Please make sure to review the context of the item and moogter terms and
+  conditions as well as privacy policy before taking actions.
+</p>

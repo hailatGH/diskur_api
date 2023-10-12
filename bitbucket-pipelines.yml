@@ -1,0 +1,89 @@
+pipelines:
+  branches:
+    master:
+      - parallel:
+        - step:
+            name: Test django project
+            image: python:3.9.13
+            caches:
+              - pip
+            script:
+              - pip install --upgrade pip 
+              - pip install -r requirements.txt
+              - pip install pytest
+        
+    DEV:
+      - parallel:
+          - step:
+              name: Deploy Django to dev environment
+              image: python:3.9.13
+              deployment: backend-dev
+              caches:
+                - pip
+              script:
+                # First we need to download the gcloud tool.
+                - curl -o /tmp/google-cloud-sdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-289.0.0-linux-x86_64.tar.gz
+                - tar -xvf /tmp/google-cloud-sdk.tar.gz -C /tmp/
+                - /tmp/google-cloud-sdk/install.sh -q
+                - source /tmp/google-cloud-sdk/path.bash.inc
+                # Activate gcloud register secret json and link to the project
+                - echo "${BACKEND_KEY}" | base64 -d >> /tmp/key-file.json
+                - gcloud auth activate-service-account --key-file /tmp/key-file.json --quiet --verbosity=warning
+                - gcloud config set project moogter-backend-dev --quiet --verbosity=warning
+
+                # Download cloud_sql_proxy
+                - wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
+                - chmod +x cloud_sql_proxy
+                - ./cloud_sql_proxy -instances="$DEV_DB_INSTANCE"=tcp:5432 > cloudsql.log 2>&1 &
+                
+                
+                - pip install --upgrade pip 
+                - pip install -r requirements.txt
+                - python manage.py migrate --settings moogtmeda.settings.ci
+                - python manage.py compilestatic --settings moogtmeda.settings.ci
+                - python manage.py collectstatic --settings moogtmeda.settings.ci --ignore=*.scss --noinput
+
+                - mkdir -p lib
+                - pip install -t lib/ -r requirements.txt
+
+                - gcloud config set app/cloud_build_timeout 1800s
+                - gcloud app --quiet deploy --version v1 --verbosity=warning
+              artifacts:
+                - cloudsql.log
+          
+    release/Staging:
+      - step:
+          name: Deploy Django to staging environment
+          image: python:3.7.3
+          deployment: backend-staging
+          caches:
+            - pip
+          script:
+            # First we need to download the gcloud tool.
+            - curl -o /tmp/google-cloud-sdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-289.0.0-linux-x86_64.tar.gz
+            - tar -xvf /tmp/google-cloud-sdk.tar.gz -C /tmp/
+            - /tmp/google-cloud-sdk/install.sh -q
+            - source /tmp/google-cloud-sdk/path.bash.inc
+            # Activate gcloud register secret json and link to the project
+            - echo "${BACKEND_KEY}" | base64 -d >> /tmp/key-file.json
+            - gcloud auth activate-service-account --key-file /tmp/key-file.json --quiet --verbosity=warning
+            - gcloud config set project moogter-backend-staging --quiet --verbosity=warning
+
+            # Download cloud_sql_proxy
+            - wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
+            - chmod +x cloud_sql_proxy
+            - ./cloud_sql_proxy -instances="$STAGING_DB_INSTANCE"=tcp:3306 > cloudsql.log 2>&1 &
+            - cd moogtmeda
+
+            - pip install -r requirements.txt
+            - python manage.py migrate --settings moogtmeda.settings.ci
+
+            - mkdir -p lib
+            - pip install -t lib/ -r requirements.txt
+            - gcloud config set app/cloud_build_timeout 1800
+            - gcloud app --quiet deploy --version v1 --verbosity=warning
+          artifacts:
+            - cloudsql.log
+definitions:
+  caches:
+    flutter: /opt/flutter
