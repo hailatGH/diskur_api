@@ -1,14 +1,14 @@
 version: "3"
 
 services:
-  # db:
-  #   image: postgres
-  #   volumes:
-  #     - dbdata:/var/lib/postgresql/data
-  #   environment:
-  #     - POSTGRES_DB=moogter
-  #     - POSTGRES_USER=postgres
-  #     - POSTGRES_PASSWORD=password
+  db:
+    image: postgres
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=moogter
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
   web:
     # image: djangocont
     build:
