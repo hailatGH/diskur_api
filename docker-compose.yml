@@ -34,3 +34,6 @@ services:
 
 volumes:
   dbdata:
+
+networks:
+  - web-network
