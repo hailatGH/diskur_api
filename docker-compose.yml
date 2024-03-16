@@ -11,6 +11,9 @@ services:
       - POSTGRES_PASSWORD=password
     ports:
       - "5432:5432"
+
+    networks:
+      - web-network
   web:
     # image: djangocont
     build:
@@ -26,6 +29,8 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    networks:
+      - web-network
 
 volumes:
   dbdata:
